@@ -1,16 +1,17 @@
 import React from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import TopMenu from './template/main/TopMenu';
+import Main from './template/main/main';
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <div className="App">
-      <BrowserRouter>
+        <TopMenu />
         <Routes>
-          <Route path="/test" element></Route>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="/logo" element={<Main />}></Route>
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }
