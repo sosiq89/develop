@@ -1,0 +1,54 @@
+#purchaseContainer{
+    width : 600px;
+    margin : auto;
+    margin-top : 15px;
+    box-sizing: border-box;
+}
+#purchaseMenu{
+    box-sizing: border-box;
+    height: 35px;
+}
+
+#companyList{
+    width : 33%;
+    height : 100%;
+    float: left;
+    border: solid 1px #dee2e6;
+    text-align: center;
+}
+#companyList:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#companyNew{
+    float: left;
+    width : 34%;
+    height : 100%;
+    border-top: solid 1px #dee2e6;
+    border-bottom: solid 1px #dee2e6;
+    text-align: center;
+}
+#companyNew:hover{
+    cursor: pointer;
+    font-weight: bold;
+
+}
+#order{
+    float: left;
+    width : 33%;
+    height : 100%;
+    border: solid 1px #dee2e6;
+text-align: center;
+}
+#order:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.purchaseLabel{
+    font-size: 20px;
+    pointer-events: none;
+}
+.purchaseLabel:focus{
+    font-weight: bold;
+}

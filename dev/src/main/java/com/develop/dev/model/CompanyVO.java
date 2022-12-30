@@ -11,9 +11,14 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-@Entity(name="Test")
-public class Test {
+@Entity(name="company")
+public class CompanyVO {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private long testId;
+  private long companyId;
+  private String name;
+  private String cate;
+  private String manager;
+  private String location;
+
 }
