@@ -1,8 +1,12 @@
 import React from "react";
 
-const Posts = () => {
+function Posts(companyLists:any){
 
-    return (<div></div>);
+    return (
+        <tbody>
+
+        </tbody>
+    );
 }
 
 export default Posts;

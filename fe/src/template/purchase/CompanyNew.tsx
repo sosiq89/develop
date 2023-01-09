@@ -26,8 +26,8 @@ const CompanyNew = () => {
         let urlPath = '/purchase/companyNew';
         axios.post(urlPath, companyVO)
             .then(res => {console.log(res)});
-        
 
+        window.location.reload();
     }
 
     return (
