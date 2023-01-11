@@ -23,12 +23,13 @@ const CompanuList = () => {
                 {params : {searchWord : searchWord}});
             setLists(res.data);
         }
-        fetchLists().then(r => {console.log(companyLists)});
+        fetchLists().then(r => {});
     }
 
     const postsData = (posts:any) => {
         if(posts){
             let result = posts.slice(offset, offset + pageSize);
+            result.totalPosts = posts.length;
             return result;
         }
     }
@@ -46,10 +47,14 @@ const CompanuList = () => {
                     <th>비고</th>
                 </tr>
             </thead>
-            <Posts companyLists={postsData(companyLists)} />
+            <Posts companyLists={postsData(companyLists)}  />
             <tfoot>
                 <tr>
                     <td colSpan={6} style={{textAlign : "center"}}>
+                        <Pagination currentPage={currentPage}
+                                    setCurrentPage={setCurrentPage}
+                                    totalPosts={companyLists.length}
+                                    pageSize={pageSize}/>
                     </td>
                 </tr>
                 <tr>

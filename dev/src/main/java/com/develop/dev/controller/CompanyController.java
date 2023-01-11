@@ -27,11 +27,6 @@ public class CompanyController {
 
     companyLists = companyService.companyList(searchWord);
 
-    for(CompanyVO one : companyLists){
-      System.out.println(one.toString());
-
-    }
-
     return ResponseEntity.ok(companyLists);
   }
 }

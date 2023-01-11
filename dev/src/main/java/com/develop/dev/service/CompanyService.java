@@ -4,6 +4,7 @@ import com.develop.dev.model.CompanyVO;
 import com.develop.dev.repository.CompanyRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class CompanyService {
   public List<CompanyVO> companyList(String searchWord) {
     List<CompanyVO> companyLists = new ArrayList<CompanyVO>();
     if(searchWord.equals(null) || searchWord.trim().isEmpty()){
-      companyLists = companyRepository.findAll();
+      companyLists = companyRepository.findAll(Sort.by(Sort.Direction.DESC, "companyId"));
     }else{
       companyLists = companyRepository.findByName(searchWord);
     }
