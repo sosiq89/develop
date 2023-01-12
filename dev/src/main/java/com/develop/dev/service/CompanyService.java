@@ -17,8 +17,7 @@ public class CompanyService {
   private final CompanyRepository companyRepository;
 
 
-  public void companyNew(CompanyVO companyVO) { companyRepository.save(companyVO);
-  }
+  public void companyNew(CompanyVO companyVO) { companyRepository.save(companyVO);}
 
   public List<CompanyVO> companyList(String searchWord) {
     List<CompanyVO> companyLists = new ArrayList<CompanyVO>();
@@ -28,5 +27,20 @@ public class CompanyService {
       companyLists = companyRepository.findByName(searchWord);
     }
     return companyLists;
+  }
+
+  public void delCompany(long companyId) { companyRepository.deleteById(companyId);}
+
+
+  public void editCompany(CompanyVO companyVO) {
+    CompanyVO companyOrigin = new CompanyVO();
+
+    companyOrigin = companyRepository.findByCompany(companyVO.getCompanyId());
+
+    companyOrigin.setName(companyVO.getName());
+    companyOrigin.setCate(companyVO.getCate());
+    companyOrigin.setManager(companyVO.getManager());
+    companyOrigin.setLocation(companyVO.getLocation());
+
   }
 }

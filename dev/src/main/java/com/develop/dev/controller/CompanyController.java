@@ -21,7 +21,7 @@ public class CompanyController {
     return "";
   }
 
-  @GetMapping(value = "companyList")
+  @GetMapping(value = "/companyList")
   public ResponseEntity<List<CompanyVO>> companyList(@RequestParam String searchWord){
     List<CompanyVO> companyLists = new ArrayList<CompanyVO>();
 
@@ -29,4 +29,10 @@ public class CompanyController {
 
     return ResponseEntity.ok(companyLists);
   }
+
+  @DeleteMapping(value = "/delCompany")
+  public void delCompany(@RequestParam long companyId){companyService.delCompany(companyId);}
+
+  @PostMapping(value = "/companyEdit")
+  public void companyEdit(@RequestBody CompanyVO companyVO){companyService.editCompany(companyVO);}
 }

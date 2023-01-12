@@ -4,6 +4,7 @@ import './App.css';
 import TopMenu from './template/main/TopMenu';
 import Main from './template/main/main';
 import Purchase from './template/purchase/Purchase';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const App = (): JSX.Element => {
   return (

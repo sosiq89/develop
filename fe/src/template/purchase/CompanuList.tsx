@@ -30,6 +30,7 @@ const CompanuList = () => {
         if(posts){
             let result = posts.slice(offset, offset + pageSize);
             result.totalPosts = posts.length;
+            result.offset = offset;
             return result;
         }
     }
