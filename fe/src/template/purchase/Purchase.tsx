@@ -3,10 +3,10 @@ import { useNavigate } from "react-router";
 import CompanyList from "./CompanuList";
 import CompanyEdit from "./CompanyEdit";
 import CompanyNew from "./CompanyNew";
-
 import {Routes, Route} from "react-router-dom";
 import Order from "./Order";
 import './purchase.css';
+
 
 const Purchase = () => {
     let navigate = useNavigate();
@@ -26,7 +26,7 @@ const Purchase = () => {
                 <div id="companyNew" onClick={urlPath}>
                     <label className="purchaseLabel">업체 등록</label></div>
                 <div id="order" onClick={urlPath}>
-                <label className="purchaseLabel">발주 등록</label></div>
+                <label className="purchaseLabel">발주 관리</label></div>
             </div>
             <div id="purchaseContent">
                 <Routes>
@@ -34,7 +34,11 @@ const Purchase = () => {
                     <Route path="/companyList" element={<CompanyList/>}></Route>
                     <Route path="/companyNew" element={<CompanyNew />}></Route>
                     <Route path="/companyEdit" element={<CompanyEdit />}></Route>
-                    <Route path="/order" element={<Order />}></Route>
+                    <Route path="/order" 
+                            element={
+                                <Order title={"test"}/>
+                            }>
+                    </Route>
                 </Routes>
             </div>
         </div>
