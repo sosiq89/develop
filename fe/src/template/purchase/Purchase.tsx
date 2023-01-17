@@ -34,7 +34,7 @@ const Purchase = () => {
                     <Route path="/companyList" element={<CompanyList/>}></Route>
                     <Route path="/companyNew" element={<CompanyNew />}></Route>
                     <Route path="/companyEdit" element={<CompanyEdit />}></Route>
-                    <Route path="/order" 
+                    <Route path="/order/*" 
                             element={
                                 <Order title={"test"}/>
                             }>

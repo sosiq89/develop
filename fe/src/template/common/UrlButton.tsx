@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import styled from "styled-components";
 import { fileURLToPath } from "url";
 import { UrlButtonType, UrlButtonCreate } from "./ButtonType";
@@ -15,11 +16,19 @@ const StyledButton = styled.button`
     background : ${(props:UrlButtonCreate) => props.background || "white"}
 `
 
-const UrlButton = ({subject, color, background}:UrlButtonType) => {
+const UrlButton = ({subject, color, background, urlPath}:UrlButtonType) => {
+
+    const navigate = useNavigate();
+    
+    const urlMove = () => {
+        console.log(urlPath);
+        navigate(urlPath);
+    }
 
     return (
         <StyledButton color={color} 
-                        background={background}>
+                        background={background}
+                        onClick={urlMove}>
             {subject}
         </StyledButton>
     );

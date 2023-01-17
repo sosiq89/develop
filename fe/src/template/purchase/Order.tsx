@@ -16,7 +16,7 @@ export type TopicsArr = {
 }
 
 const Order = (props:PropsType):JSX.Element => {
-    const urlPath = window.location.href;
+    const urlPath = "/purchase/order";
     const urlMove = () => {
         console.log("urlMove");
     }
