@@ -21,7 +21,6 @@ const UrlButton = ({subject, color, background, urlPath}:UrlButtonType) => {
     const navigate = useNavigate();
     
     const urlMove = () => {
-        console.log(urlPath);
         navigate(urlPath);
     }
 
