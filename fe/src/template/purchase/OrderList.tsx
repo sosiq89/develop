@@ -16,7 +16,7 @@ const OrderList = () => {
         <div>
             <EditButton EditButton={() => {
                 console.log("EditButton");
-            }}></EditButton>
+            }}></EditButton> 
             <input type="button" value="-" onClick={down} />
             <input type="button" value="0" onClick={reset} />
             <input type="button" value="+" onClick={up} />
