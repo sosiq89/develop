@@ -4,6 +4,7 @@ import com.develop.dev.model.CompanyVO;
 import com.develop.dev.repository.CompanyRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class CompanyService {
+
   private final CompanyRepository companyRepository;
 
 

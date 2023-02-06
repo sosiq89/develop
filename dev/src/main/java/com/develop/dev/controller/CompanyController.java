@@ -3,6 +3,7 @@ package com.develop.dev.controller;
 import com.develop.dev.model.CompanyVO;
 import com.develop.dev.service.CompanyService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping(value = "/purchase")
 public class CompanyController {
+
   private final CompanyService companyService;
   @PostMapping(value = "/companyNew")
   public String companyNew(@RequestBody CompanyVO companyVO){
