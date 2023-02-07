@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Table } from "react-bootstrap";
-import {MaterialVO} from "../common/commonVO"
+import {MaterialVO, CompanyVO} from "../common/commonVO"
+import CompanySearch from "./CompanySearch";
 
 const MaterialNeo = () => {
     const [name, setName] = useState('');
-    const [EA, setEA] = useState('');
+    const [ea, setEA] = useState('');
     const [standard, setStan] = useState('');
-    const [company, setCompany] = useState('');
+    const [companyVO, setCompanyVO] = useState<CompanyVO|undefined>();
     const [cate, setCate] = useState('');
+    const [modalFlag, setModalFlage] = useState<boolean>(false);
 
     const materialVO : MaterialVO = {
         name : name,
         standard : standard,
-        EA : EA,
-        companyName : company,
+        ea : ea,
+        companyVO : companyVO,
         cate : cate
     }
 
     const materialPost = () => {
         console.log(materialVO);
-        const urlPath = '/material/new';
+        let urlPath = '/material/new';
         axios.post(urlPath, materialVO)
             .then(res => {console.log(res)});
+
+            window.location.reload();
     }
 
     return (
@@ -50,7 +54,6 @@ const MaterialNeo = () => {
                     <td>단위</td>
                     <td>
                         <input onChange={(e) => {
-                            
                             setEA(e.target.value);
                         }} />
                     </td>
@@ -58,15 +61,17 @@ const MaterialNeo = () => {
                 <tr>
                     <td>납품 업체</td>
                     <td>
-                        <input onChange={(e) => {
-                            setCompany(e.target.value);
+                        <input onClick={(e) => {
+                            setModalFlage(true);
                         }} />
+                        
                     </td>
                     <td>카테고리</td>
                     <td>
                         <input onChange={(e) => {
                             setCate(e.target.value);
                         }} />
+                        <CompanySearch ></CompanySearch>
                     </td>
                 </tr>
                 <tr>

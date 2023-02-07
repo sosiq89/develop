@@ -1,9 +1,6 @@
 package com.develop.dev.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,11 +12,14 @@ import lombok.Setter;
 public class MaterialVO {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private String materialCode;
+  private long materialId;
   private String name;
   private String cate;
-  private String companyName;
+
+  @ManyToOne
+  @JoinColumn(name = "company_id")
+  private CompanyVO companyVO;
   private String standard;
-  private String EA;
+  private String ea;
 }
 

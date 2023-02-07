@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import {Table} from "react-bootstrap";
+import { CompanyVO } from "../common/commonVO";
 
 const CompanyNew = () => {
     const [name, setName] = useState('');
@@ -9,13 +10,7 @@ const CompanyNew = () => {
     const [location, setLocation] = useState('');
 
     const companyPost = () => {
-        interface CompanyVO{
-            name : string;
-            cate : string;
-            manager : string;
-            location : string;
-        }
-
+        
         const companyVO : CompanyVO = {
             name : name,
             cate : cate,
