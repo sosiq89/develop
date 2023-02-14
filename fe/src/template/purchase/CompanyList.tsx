@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 import Pagination from "./Pagination";
 import Posts from "./Posts";
 
-const CompanuList = () => {
+const CompanyList = ({ children }: { children?: React.ReactNode}) => {
     const [companyLists, setLists] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [pageSize] = useState(5);
@@ -70,4 +70,4 @@ const CompanuList = () => {
     );
 }
 
-export default CompanuList;
+export default CompanyList;

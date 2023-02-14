@@ -18,6 +18,10 @@ export interface CompanyVO{
     location : string;
 }
 
+export interface Posts{
+
+}
+
 const commonVO = () => {
     
 }

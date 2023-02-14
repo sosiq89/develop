@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import CompanyList from "./CompanuList";
+import CompanyList from "./CompanyList";
 import CompanyEdit from "./CompanyEdit";
 import CompanyNew from "./CompanyNew";
 import {Routes, Route} from "react-router-dom";

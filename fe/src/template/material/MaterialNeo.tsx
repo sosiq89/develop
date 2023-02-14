@@ -64,14 +64,14 @@ const MaterialNeo = () => {
                         <input onClick={(e) => {
                             setModalFlage(true);
                         }} />
-                        
+                        <CompanySearch setCompanyVO={setCompanyVO} modalFlag={modalFlag}
+                        setModalFlag={setModalFlage} />
                     </td>
                     <td>카테고리</td>
                     <td>
                         <input onChange={(e) => {
                             setCate(e.target.value);
                         }} />
-                        <CompanySearch ></CompanySearch>
                     </td>
                 </tr>
                 <tr>
