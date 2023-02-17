@@ -5,24 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03b1f0d6-f581-40c8-a741-64969f4a87cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fe/src/template/common/commonVO.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../fe/src/template/common/commonVO.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fe/src/template/material/CompanySearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../fe/src/template/material/CompanySearch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fe/src/template/material/MaterialNeo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../fe/src/template/material/MaterialNeo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fe/src/template/purchase/CompanuList.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fe/src/template/purchase/OrderList.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fe/src/template/purchase/Purchase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../fe/src/template/purchase/Purchase.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoConfigure/src/main/java/com/example/autoconfigure/Holoman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoConfigure/src/main/java/com/example/autoconfigure/HolomanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoConfigure/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/whiteship/spring/HolomanRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/whiteship/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whiteship/spring/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/whiteship/spring/ApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -38,6 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2LiRQFqP2Cj3VPxejIOLEnMoqbv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676351898967</updated>
       <workItem from="1676351900288" duration="1812000" />
-      <workItem from="1676354131960" duration="3172000" />
+      <workItem from="1676354131960" duration="9681000" />
     </task>
     <servers />
   </component>
