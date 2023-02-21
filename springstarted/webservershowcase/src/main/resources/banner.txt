@@ -1,0 +1,3 @@
+===============
+Test Banner ${spring-boot.version}
+===============
