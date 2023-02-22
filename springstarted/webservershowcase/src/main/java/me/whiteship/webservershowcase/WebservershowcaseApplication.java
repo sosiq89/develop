@@ -1,6 +1,7 @@
 package me.whiteship.webservershowcase;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WebservershowcaseApplication {
   public static void main(String[] args) {
-    SpringApplication app = new SpringApplication(SpringApplication.class);
-    //app.addListeners(new SampleListener());
+    //SpringApplication.run(WebservershowcaseApplication.class, args);
+    SpringApplication app = new SpringApplication(WebservershowcaseApplication.class);
+    app.setWebApplicationType(WebApplicationType.NONE);
     app.run(args);
   }
-
-
 }
