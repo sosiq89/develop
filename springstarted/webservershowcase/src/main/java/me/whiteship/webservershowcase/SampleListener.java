@@ -1,22 +1,26 @@
 package me.whiteship.webservershowcase;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.boot.context.event.ApplicationStartedEvent;
-import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SampleListener implements ApplicationRunner {
+
+  private Logger logger = LoggerFactory.getLogger(SampleListener.class);
   @Autowired
-  GukProperties gukProperties;
+  private String hello;
+  @Autowired
+  private GukProperties gukProperties;
   @Override
   public void run(ApplicationArguments args) throws Exception {
-    System.out.println("==============");
-    System.out.println(gukProperties.getName());
-    System.out.println("==============");
+    logger.info("=================");
+    logger.info(hello);
+    logger.info(gukProperties.getName());
+    logger.info("=================");
   }
 }
 

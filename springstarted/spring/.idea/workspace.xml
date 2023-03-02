@@ -4,26 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b1f0d6-f581-40c8-a741-64969f4a87cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../AutoConfigure/src/main/java/com/example/autoconfigure/HolomanProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoConfigure/src/main/java/com/example/autoconfigure/HolomanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoConfigure/src/main/java/com/example/autoconfigure/HolomanConfiguration.java" afterDir="false" />
+    <list default="true" id="efd04808-7290-460b-9d56-e34961bdc404" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../webservershowcase/src/main/java/me/whiteship/webservershowcase/config/BaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webservershowcase/src/main/java/me/whiteship/webservershowcase/config/TestConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webservershowcase/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webservershowcase/src/main/resources/application-proddb.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webservershowcase/src/main/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/whiteship/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whiteship/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/whiteship/spring/HolomanRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webservershowcase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webservershowcase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webservershowcase/src/main/java/me/whiteship/webservershowcase/SampleListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webservershowcase/src/main/java/me/whiteship/webservershowcase/SampleListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webservershowcase/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../webservershowcase/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -38,52 +34,29 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2LiRQFqP2Cj3VPxejIOLEnMoqbv" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2MJIZegdALDn6KXgoRyXkHW1rdF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "2a2d595e6ed9a0b24f027f2b63b134d6",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="me.whiteship.spring.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="03b1f0d6-f581-40c8-a741-64969f4a87cd" name="Changes" comment="" />
-      <created>1676351898967</created>
+      <changelist id="efd04808-7290-460b-9d56-e34961bdc404" name="Changes" comment="" />
+      <created>1677479315012</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676351898967</updated>
-      <workItem from="1676351900288" duration="1812000" />
-      <workItem from="1676354131960" duration="17210000" />
+      <updated>1677479315012</updated>
+      <workItem from="1677479316076" duration="113000" />
     </task>
     <servers />
   </component>
