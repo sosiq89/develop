@@ -15,11 +15,6 @@ repositories {
 dependencies {
   implementation 'org.springframework.boot:spring-boot-starter-web'
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
-  implementation 'org.springframework.boot:spring-boot-starter-webflux'
-  testImplementation("org.junit.vintage:junit-vintage-engine") {
-    exclude group: "org.hamcrest", module: "hamcrest-core"
-  }
 }
 
 tasks.named('test') {
